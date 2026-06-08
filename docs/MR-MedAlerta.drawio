@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="wjJNLdjH9Wq98K9ZYwxs">
+    <mxGraphModel dx="808" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;fontStyle=1" value="Modelo Relacional" vertex="1">
+          <mxGeometry height="40" width="250" x="270" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Usuario" vertex="1">
+          <mxGeometry height="40" width="200" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idUsuario int(PK)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;nome varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;telefone varchar(10)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;email varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoRua varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoNumero int&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoComplemento varchar(50)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoBairro&amp;nbsp;varchar(50)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoCEP&amp;nbsp;varchar(10)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoCidade&amp;nbsp;varchar(50)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;enderecoEstado&amp;nbsp;char(2)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Medicamento" vertex="1">
+          <mxGeometry height="40" width="200" x="560" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idMedicamento int(PK)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;nomeComercial varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;nomeGenerico varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;quantidade enum(&#39;unidade&#39;, &#39;ml&#39;)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;formaUso varchar(100)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;observacoes varchar(200)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="560" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UsuarioMedicamento" vertex="1">
+          <mxGeometry height="40" width="200" x="310" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idTratamento int(PK)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idUsuario int(FK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idMedicamento int(FK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;dataInicio datetime&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;duracaoDias int&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;intervaloHoras int&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;dosagem&amp;nbsp;varchar(50)&lt;/div&gt;&amp;nbsp;observacoes varchar(200)" vertex="1">
+          <mxGeometry height="200" width="200" x="310" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-8" edge="1" parent="1" source="Hr9AFE1wMA0Zv7Jfv9XA-7" style="endArrow=none;html=1;rounded=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=0.45;exitDx=0;exitDy=0;exitPerimeter=0;" target="Hr9AFE1wMA0Zv7Jfv9XA-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="530" />
+            </Array>
+            <mxPoint x="160" y="430" as="sourcePoint" />
+            <mxPoint x="210" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-9" edge="1" parent="1" source="Hr9AFE1wMA0Zv7Jfv9XA-7" style="endArrow=none;html=1;rounded=0;entryX=0.4;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.015;exitY=0.455;exitDx=0;exitDy=0;exitPerimeter=0;" target="Hr9AFE1wMA0Zv7Jfv9XA-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="531" />
+            </Array>
+            <mxPoint x="849" y="740" as="sourcePoint" />
+            <mxPoint x="740" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, 1)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, n)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="260" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, n)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="510" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Hr9AFE1wMA0Zv7Jfv9XA-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, 1)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alerta" vertex="1">
+          <mxGeometry height="40" width="200" x="90" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idAlerta int(PK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idUsuario int(FK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idMedicamento int(FK)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;dataHorarioAlerta datetime&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;statusAlerta enum(&#39;pendente&#39;, &#39;consumido&#39;, &#39;não consumido&#39;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="90" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RegistroUso" vertex="1">
+          <mxGeometry height="40" width="200" x="460" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idRegistro int(PK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;idAlerta int(FK)&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;dataHorarioConsumo datetime&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&amp;nbsp;observacoes varchar(200)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="460" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-6" edge="1" parent="1" source="Kk4QoubDCCwpdhkRmTan-2" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Kk4QoubDCCwpdhkRmTan-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="750" as="sourcePoint" />
+            <mxPoint x="400" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, n)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, n)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="410" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-9" edge="1" parent="1" source="Kk4QoubDCCwpdhkRmTan-2" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.804;entryDx=0;entryDy=0;entryPerimeter=0;" target="Hr9AFE1wMA0Zv7Jfv9XA-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="600" />
+            </Array>
+            <mxPoint x="240" y="670" as="sourcePoint" />
+            <mxPoint x="290" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(1, n)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="190" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Kk4QoubDCCwpdhkRmTan-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;(n, 1)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="260" y="570" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
