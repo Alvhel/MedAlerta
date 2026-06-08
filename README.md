@@ -18,7 +18,7 @@ Não participei do BootCamp no dia da realização. Como as entregas em grupo j�
 
 Por decisão própria, utilizei uma stack diferente da adotada:
 
-| Item | Stack do grupo | Minha stack |
+| Item | Stack original | Minha stack |
 |---|---|---|
 | Linguagem | Java | Python 3.12 |
 | Framework | Spring Boot | FastAPI |
